@@ -7,7 +7,7 @@ import Login from './Pages/Login';
 
 import NavBar from "./Components/NavBar/NavBar";
 import Container from "./Components/Container/Container";
-import { BrowserRouter as Roter,Route,Switch } from 'react-router-dom';
+import { BrowserRouter as Router,Route,Switch } from 'react-router-dom';
 
 function App() {
   return (
