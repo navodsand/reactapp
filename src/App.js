@@ -1,12 +1,17 @@
 // import logo from './logo.svg';
 import './App.css';
+import Home from './Pages/Home';
+import About from './Pages/About';
+import Contact from './Pages/Contact';
+import Login from './Pages/Login';
+
 import NavBar from "./Components/NavBar/NavBar";
 import Container from "./Components/Container/Container";
 import { BrowserRouter as Roter,Route,Switch } from 'react-router-dom';
 
 function App() {
   return (
-    <Roter>
+    <Router>
       <div>
         <Switch>
 
@@ -28,7 +33,7 @@ function App() {
 
         </Switch> 
       </div>
-    <Roter/>
+    </Router>
   );
 }
 
