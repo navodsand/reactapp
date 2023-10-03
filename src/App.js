@@ -7,33 +7,47 @@ import Login from './Pages/Login';
 
 import NavBar from "./Components/NavBar/NavBar";
 import Container from "./Components/Container/Container";
-import { BrowserRouter as Router,Route,Switch } from 'react-router-dom';
+// import { Route,Switch } from 'react-router';
+// import { Switch } from 'react-router-dom';
+import { Routes, Route, Outlet, Link } from "react-router-dom";
 
 function App() {
   return (
-    <Router>
-      <div>
-        <Switch>
+    // <Router>
+    //   <div>
+        // <Switch>
 
-          <Route path='/'>
-            <Home/>
-          </Route>
+        //   <Route path='/'>
+        //     <Home/>
+        //   </Route>
 
-          <Route path='/About'>
-            <About/>
-          </Route>
+        //   <Route path='/About'>
+        //     <About/>
+        //   </Route>
 
-          <Route path='/Contact'>
-            <Contact/>
-          </Route>
+        //   <Route path='/Contact'>
+        //     <Contact/>
+        //   </Route>
 
-          <Route path='/Login'>
-            <Login/>
-          </Route>
+        //   <Route path='/Login'>
+        //     <Login/>
+        //   </Route>
 
-        </Switch> 
-      </div>
-    </Router>
+        // </Switch> 
+    //   </div>
+    // </Router>
+    <Routes>
+    <Route path="/" element={<Home />}>
+      <Route index element={<Home />} />
+      <Route path="about" element={<About />} />
+      <Route path="dashboard" element={<Home />} />
+
+      {/* Using path="*"" means "match anything", so this route
+            acts like a catch-all for URLs that we don't have explicit
+            routes for. */}
+      <Route path="*" element={<Home />} />
+    </Route>
+  </Routes>
   );
 }
 
