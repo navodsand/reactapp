@@ -1,11 +1,22 @@
 //import logo from './logo.svg';
+import { BrowserRouter, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
 import Home from './Components/Home.js';
+import About from './Pages/About.jsx';
+import Login from './Pages/Login.jsx';
 
 function App() {
   return (
-    <div className="App">
-      <Home />
+    <div>
+      
+      <BrowserRouter>
+      <Routes>
+        <Route path ="/" element ={<Home/>}></Route>
+        <Route path ="/about" element ={<About/>}></Route>
+        <Route path ="/login" element ={<Login/>}></Route>
+      </Routes>
+      </BrowserRouter>
     </div>
   );
 }
