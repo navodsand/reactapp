@@ -1,9 +1,9 @@
 //import logo from './logo.svg';
 import './home.css';
 
-function home() {
+function Home() {
   return (
-    <div className="App">
+    <div>
       <body>
     <div class="backimage">
       <header>
@@ -107,4 +107,4 @@ function home() {
   );
 }
 
-export default home;
+export default Home;
