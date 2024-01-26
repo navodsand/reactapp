@@ -1,16 +1,19 @@
 //import logo from './logo.svg';
 import './style.css';
+import { Link } from 'react-router-dom'
 
 function Home() {
   return (
     <div>
+       
       <body>
     <div class="backimage">
       <header>
         <div class="topnav">
-          <a class="active" href="index.html">Home</a>
-          <a href="about.html">About</a>
-          <a href="Login.html">Login</a>
+          <Link to ="/Login">login</Link>
+          <Link to="/Home" class="active">Home</Link>
+          <Link to="/About">About</Link>
+          
         </div>
       </header>
 

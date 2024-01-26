@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 //import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 export default function About() {
@@ -8,9 +9,9 @@ export default function About() {
     <div class="backimage">
       <header>
         <div class="topnav">
-          <a href="index.html">Home</a>
-          <a class="active" href="about.html">About</a>
-          <a href="login.html">Login</a>
+          <Link to ="/Login">login</Link>
+          <Link to="/Home">Home</Link>
+          <Link to="/About" class="active">About</Link>
         </div>
       </header>
 

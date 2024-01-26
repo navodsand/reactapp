@@ -1,5 +1,6 @@
  import React from 'react';
  import './style.css';
+ import { Link } from 'react-router-dom'
  //import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
  
  export default function Login() {
@@ -9,9 +10,9 @@
     <div class="backimage">
       <header>
         <div class="topnav">
-          <a href="index.html">Home</a>
-          <a href="about.html">About</a>
-          <a class="active" href="login.html">Login</a>
+          <Link to ="/Login" class="active">login</Link>
+          <Link to="/Home">Home</Link>
+          <Link to="/About">About</Link>
         </div>
       </header>
       <main class="about">
