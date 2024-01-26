@@ -9,7 +9,6 @@ import Login from './Pages/Login.jsx';
 function App() {
   return (
     <div>
-      
       <BrowserRouter>
       <Routes>
         <Route path ="/home" element ={<Home/>}></Route>

@@ -10,7 +10,7 @@ function Home() {
     <div class="backimage">
       <header>
         <div class="topnav">
-          <Link to ="/Login">login</Link>
+          <Link to ="/Login">Login</Link>
           <Link to="/Home" class="active">Home</Link>
           <Link to="/About">About</Link>
           

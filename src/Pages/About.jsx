@@ -9,7 +9,7 @@ export default function About() {
     <div class="backimage">
       <header>
         <div class="topnav">
-          <Link to ="/Login">login</Link>
+          <Link to ="/Login">Login</Link>
           <Link to="/Home">Home</Link>
           <Link to="/About" class="active">About</Link>
         </div>
