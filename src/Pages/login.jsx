@@ -10,7 +10,7 @@
     <div class="backimage">
       <header>
         <div class="topnav">
-          <Link to ="/Login" class="active">login</Link>
+          <Link to ="/Login" class="active">Login</Link>
           <Link to="/Home">Home</Link>
           <Link to="/About">About</Link>
         </div>
