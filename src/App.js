@@ -29,9 +29,8 @@ function App() {
       <div>
       <h1>React Component Rendering Example</h1>
       <button onClick={handleButtonClick}>Render Component</button>
-
       {isComponentVisible && <MyComponentToRender />}
-    </div>
+      </div>
 
     </div>
   );
